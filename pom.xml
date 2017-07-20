@@ -24,6 +24,7 @@
 		<java.version>1.8</java.version>
 		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
+		<tomcat.version>8.0.45</tomcat.version>
 	</properties>
 
 	<dependencies>
@@ -47,6 +48,15 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- springboot actuator -->
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-actuator -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+			<version>1.5.4.RELEASE</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
